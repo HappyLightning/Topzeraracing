@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Melhor" sid="504290893595775" static="0" type="number">0</variable>
+        <variable constant="0" name="Pontos" sid="146194128137017" static="0" type="number">0</variable>
+        <variable constant="0" name="Voltas" sid="269867757744352" static="0" type="number">0</variable>
+        <variable constant="0" name="Combustível" sid="296525127604468" static="0" type="number">15</variable>
+        <variable constant="0" name="Super" sid="438524849868930" static="0" type="number">0</variable>
+        <event-block sid="677332150373778">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="403357031142802" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="481935131412113" type="Pontuação">
+                    <param id="0" name="Text">Pontos</param>
+                </action>
+                <action id="0" name="Set text" sid="993740522525183" type="Voltas">
+                    <param id="0" name="Text">&quot;Volta:&quot; &amp; Voltas</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Carro</comment>
+        <event-block sid="869570525346720">
+            <conditions>
+                <condition id="4" name="On finished" sid="824034501129395" type="Carro">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="728135585897855" type="Carro">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="223909616531247">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="316554008293904" type="Carro">
+                    <param id="0" name="Object">Caixa</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="119109940585935" type="Carro">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action id="-16" name="Wait" sid="898214233427565" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="861195337367322" type="System" />
+                <action id="-21" name="Reset global variables" sid="859101665716287" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="403999352602490">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="668123804766611" type="Carro">
+                    <param id="0" name="Object">Caixa3volta</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="515199739128640" type="Carro">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action id="-16" name="Wait" sid="381387403270529" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="315829167162772" type="System" />
+                <action id="-21" name="Reset global variables" sid="677518304237343" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="565651280757925">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="604006430944542" type="Carro">
+                    <param id="0" name="Object">Gasosa</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="836176189173115" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Add to" sid="593656670373380" type="System">
+                    <param id="0" name="Variable">Combustível</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="5" name="Set frame" sid="338846174210979" type="Tanque">
+                    <param id="0" name="Frame number">Combustível</param>
+                </action>
+                <action id="-9" name="Destroy" sid="492311019824469" type="Gasosa" />
+            </actions>
+        </event-block>
+        <event-block sid="420661987955269">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="720715830530520" type="Carro">
+                    <param id="0" name="Object">Gasosa3volta</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="235802169439110" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Add to" sid="255510406092979" type="System">
+                    <param id="0" name="Variable">Combustível</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="5" name="Set frame" sid="194130739412103" type="Tanque">
+                    <param id="0" name="Frame number">Combustível</param>
+                </action>
+                <action id="-9" name="Destroy" sid="876603129264409" type="Gasosa3volta" />
+            </actions>
+        </event-block>
+        <event-block sid="180333725737920">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="757848024384517" type="System">
+                    <param id="0" name="Variable">Voltas</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="582147177793183" type="Gasosa3volta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="211487832664494" type="Gasosa3volta">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="385525394070134" type="Caixa3volta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="111238738092561" type="Caixa3volta">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="895542278111095" type="Caixa3volta">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="972900213970072">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="888525168224606" type="Carro">
+                    <param id="0" name="Object">Chegada</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="997971723100256" type="System">
+                    <param id="0" name="Variable">Voltas</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="252633192692834" type="System">
+                    <param id="0" name="Object to create">EstrelaPoder</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">1080</param>
+                    <param id="3" name="Y">860</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="931697665744156">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="459324039176278" type="Carro">
+                    <param id="0" name="Object">parede</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="696189016681846" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="553705416000538">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="877487342368790" type="Carro">
+                    <param id="0" name="Object">Dentro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="180881256196343" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Sistema de SuperCarro</comment>
+        <event-block sid="527265100097765">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="484366962908494" type="System">
+                    <param id="0" name="Variable">Super</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="928482651603160" type="Carro">
+                    <param id="0" name="Animation">&quot;Super&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Car" id="5" name="Set acceleration" sid="229930182428989" type="Carro">
+                    <param id="0" name="Acceleration">300</param>
+                </action>
+                <action behavior="Car" id="4" name="Set max speed" sid="983359283763081" type="Carro">
+                    <param id="0" name="Max Speed">620</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="149967532712818" type="Caixa">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="233984040327757" type="Caixa3volta">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="992193814418631">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="304147637874112" type="Carro">
+                    <param id="0" name="Object">EstrelaPoder</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="575003906691231" type="System">
+                    <param id="0" name="Variable">Super</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="923280753787810" type="EstrelaPoder" />
+                <action id="-16" name="Wait" sid="390584056140711" type="System">
+                    <param id="0" name="Seconds">12</param>
+                </action>
+                <action id="-9" name="Set value" sid="606336244614325" type="System">
+                    <param id="0" name="Variable">Super</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="947996263654014" type="Caixa">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="359127356623635" type="Caixa3volta">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="491158757798738" type="Carro">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Linha de Chegada</comment>
+        <event-block sid="464594997528809">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="901431873085548" type="Carro">
+                    <param id="0" name="Object">Chegada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="971601653373470" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="745757404662920" type="ColisãoChegada">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="718021476493445" type="System">
+                    <param id="0" name="Variable">Voltas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Start" sid="111332437016256" type="Carro">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="928951463972340">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="879175185283407" type="Carro">
+                    <param id="0" name="Object">LigaColisãoChegada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="579294611957917" type="ColisãoChegada">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="554398232693352" type="ColisãoChegada2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698117688034528">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="350329063667222" type="Carro">
+                    <param id="0" name="Object">ColisãoChegada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="127092850373602" type="ColisãoChegada2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Sistema de Combustível</comment>
+        <event-block sid="731507564611337">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="490631980794762" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="616781560742864" type="Tanque">
+                    <param id="0" name="Frame number">Combustível</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="229038567410082" type="System">
+                    <param id="0" name="Variable">Combustível</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="647542980393884">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="524814358475021" type="System">
+                    <param id="0" name="Variable">Combustível</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="294817275523529" type="System" />
+                <action id="-9" name="Set value" sid="798308126961500" type="System">
+                    <param id="0" name="Variable">Combustível</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Sistema de Melhor Pontuação</comment>
+        <event-block sid="450239581825042">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="237177388043728" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">Melhor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="841303868511770" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Pontos&quot;</param>
+                    <param id="1" name="Value">Pontos</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="971742884745712" type="System">
+                    <param id="0" name="Variable">Melhor</param>
+                    <param id="1" name="Value">Pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856807947681435">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="956631915869772" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="936595242203222" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Pontos&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="214766998781786">
+            <conditions>
+                <condition id="9" name="On item exists" sid="807536518240018" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Pontos&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="706985988539613" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Pontos&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="702878638831805" type="System">
+                    <param id="0" name="Variable">Melhor</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="0" name="Set text" sid="669645264305184" type="HiScore1">
+                    <param id="0" name="Text">&quot;Melhor: &quot; &amp; Melhor</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="274001060171361">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="905626808917405" type="System">
+                    <param id="0" name="Variable">Voltas</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="892936857870828" type="Audio">
+                    <param id="0" name="Audio file">Super Street Fighter II OST Guile Theme</param>
+                </action>
+                <action id="33" name="Stop all" sid="707149243146264" type="Audio" />
+                <action id="0" name="Play" sid="823160798993085" type="Audio">
+                    <param id="0" name="Audio file">Super Street Fighter II OST Guile Theme</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>TopZeracing</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>24apya0zkn5lc</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1820</width>
+        <height>980</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="683928731085563">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="parede" sid="926376189028982">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="276959071038120">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231861776488072" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Pronta.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dentro" sid="369177765856222">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="401547099294013">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743191937496591" speed="5">
+                    <frame duration="1" hotspotX="0.516319" hotspotY="0.526824" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Pronta_pista.png">
+                        <collision-poly>
+                            <point x="0.302219" y="0.277897" />
+                            <point x="0.359987" y="0.193133" />
+                            <point x="0.400783" y="0.153433" />
+                            <point x="0.498042" y="0.152897" />
+                            <point x="0.551567" y="0.210703" />
+                            <point x="0.608355" y="0.28353" />
+                            <point x="0.904701" y="0.283262" />
+                            <point x="0.903395" y="0.843348" />
+                            <point x="0.505222" y="0.843348" />
+                            <point x="0.112924" y="0.843348" />
+                            <point x="0.101501" y="0.799356" />
+                            <point x="0.114883" y="0.758584" />
+                            <point x="0.618962" y="0.755365" />
+                            <point x="0.68081" y="0.580472" />
+                            <point x="0.658616" y="0.465129" />
+                            <point x="0.622063" y="0.373391" />
+                            <point x="0.110313" y="0.372854" />
+                            <point x="0.0975849" y="0.330338" />
+                            <point x="0.113577" y="0.281384" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap" sid="122260386323671">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\plant repack.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap2" sid="502573356743080">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Tilemaps\tile2map32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tanque" sid="955694055167777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Enchendo" pingpong="0" repeatcount="1" repeatto="0" sid="364234132258855" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar0_[empty].png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar1.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar2.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar3.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar4.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar5.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar6.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar7.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar8.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar9.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar10_[Normal].png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar11.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar12.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar13.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar14.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar15_[full].png" />
+                </animation>
+                <animation framecount="16" loop="0" name="Esvaziando" pingpong="0" repeatcount="1" repeatto="0" sid="624013496821937" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar15_[full].png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar14.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar13.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar12.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar11.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar10_[Normal].png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar9.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar8.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar7.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar6.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar5.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar4.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar3.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar2.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar1.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Health bar\Health bar0_[empty].png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Cheia" pingpong="0" repeatcount="1" repeatto="0" sid="972639012280965" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.490909" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Menu\Health bar\Health bar15_[full].png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.0135135" />
+                            <point x="0.521053" y="0.0135135" />
+                            <point x="0.981579" y="0.0540541" />
+                            <point x="0.997368" y="0.486486" />
+                            <point x="0.984211" y="0.932432" />
+                            <point x="0.521053" y="0.986486" />
+                            <point x="0.0473684" y="0.986486" />
+                            <point x="0.00263158" y="0.486486" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ForaTiles" sid="550949263872139">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Tilemaps e background\tile2map16.png" />
+            <tiles />
+        </object-type>
+        <object-type name="ForaTiles2" sid="896359605596644">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Tilemaps e background\plant repack.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Caixa" sid="646525359321150">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="369844028531875">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732829766526053" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Itens\crate.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pontuação" sid="981559806681998">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Carro" sid="594245174502848">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="517254793318864">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="251245127037983">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178681645626711" speed="5">
+                    <frame duration="1" hotspotX="0.46" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_0.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_1.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_2.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_3.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.53125" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_4.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.53125" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_5.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.46875" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_6.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.46875" original-source="C:\Users\Gtrga\Desktop\Topzeraracing-main\Topzera Racing\Sprites\Carrinho\SportsRacingCar_7.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Super" pingpong="0" repeatcount="1" repeatto="0" sid="309820223167401" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\Super_Carro.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.785714" />
+                            <point x="0.125" y="0.785714" />
+                            <point x="0" y="0.5" />
+                            <point x="0.125" y="0.214286" />
+                            <point x="0.5" y="0.214286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chegada" sid="680522483658230">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874502117955717" speed="5">
+                    <frame duration="1" hotspotX="6.13953" hotspotY="0.496479" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Pistas\Largada Horizontal.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ColisãoChegada" sid="490906504861690">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="516188442679573">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266137499480926" speed="5">
+                    <frame duration="1" hotspotX="8.4" hotspotY="1.76923" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LigaColisãoChegada" sid="662357396413213">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694033045742497" speed="5">
+                    <frame duration="1" hotspotX="14" hotspotY="1.0202" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ColisãoChegada2" sid="976522945773260">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="997254987604770">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883962665411351" speed="5">
+                    <frame duration="1" hotspotX="8.28571" hotspotY="0.482517" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HiScore1" sid="570011114997210">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LocalStorage" sid="203571030157786">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Gasosa" sid="181300110204174">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="679238283344142" speed="5">
+                    <frame duration="1" hotspotX="0.442308" hotspotY="0.45" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Itens\Galão.png">
+                        <collision-poly>
+                            <point x="0.152075" y="0.258065" />
+                            <point x="0.436741" y="0.0967742" />
+                            <point x="0.721407" y="0.258065" />
+                            <point x="0.911184" y="0.459677" />
+                            <point x="0.847925" y="0.822581" />
+                            <point x="0.436741" y="0.741935" />
+                            <point x="0.278593" y="0.5" />
+                            <point x="0.0255567" y="0.459677" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Voltas" sid="123166660495398">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Gasosa3volta" sid="363901453160434">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562170992153125" speed="5">
+                    <frame duration="1" hotspotX="0.433333" hotspotY="0.478261" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Itens\Galão.png">
+                        <collision-poly>
+                            <point x="0.138158" y="0.254098" />
+                            <point x="0.434211" y="0.0901639" />
+                            <point x="0.730263" y="0.254098" />
+                            <point x="0.927632" y="0.459016" />
+                            <point x="0.861842" y="0.827869" />
+                            <point x="0.434211" y="0.745902" />
+                            <point x="0.269737" y="0.5" />
+                            <point x="0.00657895" y="0.459016" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Caixa3volta" sid="919196364819359">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="108542366446936">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="338214962151433" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Itens\crate.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="825899024268770">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Título" sid="912763738111612">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127945070706316" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Tela título\Título.png">
+                        <collision-poly>
+                            <point x="0.275135" y="0.509" />
+                            <point x="0.5" y="0.265" />
+                            <point x="0.805405" y="0.36" />
+                            <point x="0.576216" y="0.5" />
+                            <point x="0.671892" y="0.393" />
+                            <point x="0.5" y="0.604" />
+                            <point x="0.214595" y="0.603" />
+                            <point x="0.206486" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EstrelaTítulo" sid="901100355852734">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582206590531438" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500975" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Tela título\56-561684_8-bit-star-png-transparent-png.png">
+                        <collision-poly>
+                            <point x="0.234884" y="0.393762" />
+                            <point x="0.5" y="0.079922" />
+                            <point x="0.765116" y="0.393762" />
+                            <point x="0.737209" y="0.499025" />
+                            <point x="0.709302" y="0.512671" />
+                            <point x="0.5" y="0.781676" />
+                            <point x="0.290698" y="0.512671" />
+                            <point x="0.262791" y="0.499025" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tecla" sid="808290909219745">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="503496035785882">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Audio" sid="343791515852187">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="CarroTítulo" sid="649986792021630">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="165755726912754">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="608042882693504">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984821781733432" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\SportsRacingCar_7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EstrelaPoder" sid="865627105831188">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="278207235944351">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297912999038771" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Tela título\56-561684_8-bit-star-png-transparent-png.png">
+                        <collision-poly>
+                            <point x="0.00218341" y="0.373272" />
+                            <point x="0.5" y="0.00230415" />
+                            <point x="0.997817" y="0.373272" />
+                            <point x="0.856555" y="1" />
+                            <point x="0.5" y="0.816172" />
+                            <point x="0.179904" y="0.984375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SuperCarro" sid="399375393523176">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="277136467800783">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="134969460903453">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339302319488839" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Gtrga\Desktop\Topzera Racing\Sprites\Carrinho\Super_Carro.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.785714" />
+                            <point x="0.125" y="0.785714" />
+                            <point x="0" y="0.5" />
+                            <point x="0.125" y="0.214286" />
+                            <point x="0.5" y="0.214286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Título.xml</layout>
+        <layout>Jogo.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="LocalStorage" uid="38" />
+        <global-instance type="Audio" uid="58">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Top Gear Intro Theme.ogg" />
+        <file name="Super Street Fighter II OST Guile Theme.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

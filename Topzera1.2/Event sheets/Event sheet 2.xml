@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="573499748839923">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="837901880465115" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="455677750232933" type="System">
+                    <param id="0" name="Layout">Jogo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="690873315385442">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="986081906190035" type="System">
+                    <param id="0" name="Interval (seconds)">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="359526926525569" type="Tecla" />
+            </actions>
+        </event-block>
+        <event-block sid="312962400233597">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="520011936180712" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="903270553529004" type="Audio">
+                    <param id="0" name="Audio file">Top Gear Intro Theme</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;st&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="712814446972118">
+            <conditions>
+                <condition id="4" name="On finished" sid="609166473931915" type="CarroTítulo">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="203743638287025" type="CarroTítulo">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

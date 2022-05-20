@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Jogo</layout>
+        <layout order="2">Título</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
+        <event-sheet active="1" order="3">Event sheet 2</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/parede/" />
+        <folder expanded="1" path="animation-folder/Dentro/" />
+        <folder expanded="1" path="animation-folder/Tanque/" />
+        <folder expanded="1" path="animation-folder/Caixa/" />
+        <folder expanded="1" path="animation-folder/Carro/" />
+        <folder expanded="1" path="animation-folder/Chegada/" />
+        <folder expanded="1" path="animation-folder/ColisãoChegada/" />
+        <folder expanded="1" path="animation-folder/LigaColisãoChegada/" />
+        <folder expanded="1" path="animation-folder/ColisãoChegada2/" />
+        <folder expanded="1" path="animation-folder/Gasosa/" />
+        <folder expanded="1" path="animation-folder/Gasosa3volta/" />
+        <folder expanded="1" path="animation-folder/Caixa3volta/" />
+        <folder expanded="1" path="animation-folder/Título/" />
+        <folder expanded="1" path="animation-folder/EstrelaTítulo/" />
+        <folder expanded="1" path="animation-folder/CarroTítulo/" />
+        <folder expanded="1" path="animation-folder/EstrelaPoder/" />
+        <folder expanded="1" path="animation-folder/SuperCarro/" />
+    </folders-expanded>
+</c2uistate>
